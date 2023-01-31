@@ -6,5 +6,5 @@ index = int(input())
 number = 1
 for count in range(1,index + 1):
     number *= count
-    print(number)
+    print(number, end=" ")
     
