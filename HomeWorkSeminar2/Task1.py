@@ -3,12 +3,12 @@
 # - 6782 -> 23
 # - 0,56 -> 11
 
-number = input()
+number = str(input('Введите число: '))
 count = 0
-number = float(number[::-1])
-print((number))
+number = number.replace('.', '').replace(',', '')
+number = int(number)
 
 while number != 0:
     count += number % 10
     number = number // 10
-print(count)
+print(f'Сумма всех цифр числа = {count}')
