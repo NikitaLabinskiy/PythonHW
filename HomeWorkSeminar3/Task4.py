@@ -7,7 +7,7 @@
 number = int(input())
 number1 = number
 result = ''
-# while number >= 1:
+# while number >= 1:                  Вариант 2.
 #     if number % 2 == 0:
 #         result += '0'
 #     else:
