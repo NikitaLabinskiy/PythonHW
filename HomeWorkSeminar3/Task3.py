@@ -3,23 +3,24 @@
 # Пример:
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
 
-spisok = ['1.1', '1.2', '3.1', '5', '10.01']
-# spisok_new = []
+spisok = [1.1, 1.2, 3.1, 5, 10.01]
 spisok2 = []
-temp = 0
 
-number = ('10.02')
-number = float(number[::-1])
-print((number))
+for i in range(5):
+    spisok[i] = float(spisok[i] - int(spisok[i]))
+    spisok2.append(round(spisok[i], 2))
 
-# number = '110.15'
-# result = '.'.join(number.split('.')[::-1])
+maxi = 0
+mini = 1000000000000
 
-for i in range(6):
-    temp = float(spisok[i][::-1])
-    if temp > 10:
-        spisok2.append(int(temp) * 2)
+for i in range(5):
+    if spisok2[i] == 0:
+        continue
     else:
-        spisok2.append(int(temp))
-    temp = 0
-print(spisok2)
+        if maxi < spisok2[i]:
+            maxi = round(spisok2[i], 2)
+        if mini > spisok2[i]:
+            mini = round(spisok2[i], 2)         
+print(spisok2, end=" => ")
+print(maxi - mini)
+
