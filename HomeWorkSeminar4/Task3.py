@@ -1,7 +1,11 @@
-# Задайте последовательность чисел. 
+# Задайте последовательность чисел.
 # Напишите программу, которая выведет список неповторяющихся элементов исходной последовательности.
-
 import random
+import os
+def clear(): return os.system('cls')
+
+clear()
+
 sequence = int(input('Введите длину последовательности: '))
 nonrepeating_elements = []
 repeating_elements = []
