@@ -9,6 +9,7 @@
 import os
 def clear(): return os.system('cls')
 clear()
+from random import randint
 
 candis_bank = int(input('Введите количество конфет: '))
 
@@ -40,8 +41,6 @@ def Take_the_candy(candis):
             print('Выиграл - Player_1')
         else:
             print('Выиграл - Player_2')
-        
-    
-        
-Take_the_candy(candis_bank)    
 
+
+Take_the_candy(candis_bank)
