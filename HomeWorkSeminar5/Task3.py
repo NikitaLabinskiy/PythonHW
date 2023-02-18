@@ -7,8 +7,7 @@ clear()
 def Print_Game_Board(board):
     print('-------------')
     for i in range(3):
-        print(
-            f"| {board[0 + i * 3]} | {board[1 + i * 3]} | {board[2 + i * 3]} |")
+        print(f"| {board[0 + i * 3]} | {board[1 + i * 3]} | {board[2 + i * 3]} |")
         print('-------------')
 
 
